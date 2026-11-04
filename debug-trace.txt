@@ -1,0 +1,17 @@
+Temporary console.log trace (since reverted) from apps/mobile/src/native/T3ComposerEditor.ios.tsx onComposerChange/render, ThreadComposer handleSend, and use-thread-composer-state onSendMessage just before clearComposerDraftContent.
+Columns: ms clock (mod 100000); pv = props.value at event time; n = native eventCount; js = JS mostRecentEventCountRef; sent = controlled payload mostRecentEventCount; echo = isNativeEcho.
+Typed 'Fix untill' on the on-screen keyboard with the 'until' correction pending, then tapped Send.
+
+DBG change 37034 {"pv":"Fix until","n":24,"v":"Fix until","js":23}
+DBG render 37037 {"v":"Fix until","sent":24,"echo":true,"latest":24}
+DBG change 38228 {"pv":"Fix until","n":25,"v":"Fix untill","js":24}
+DBG render 38232 {"v":"Fix untill","sent":25,"echo":true,"latest":25}
+DBG render 38232 {"v":"Fix untill","sent":25,"echo":true,"latest":25}
+DBG handleSend start 48399 "Fix untill"
+DBG clear draft 48404 {"sent":"Fix untill","now":"Fix untill"}
+DBG change 48404 {"pv":"Fix untill","n":26,"v":"Fix until","js":25}
+DBG render 48420 {"v":"Fix until","sent":26,"echo":true,"latest":26}
+DBG render 48420 {"v":"Fix until","sent":26,"echo":true,"latest":26}
+DBG render 48448 {"v":"Fix until","sent":26,"echo":true,"latest":26}
+DBG render 48549 {"v":"Fix until","sent":26,"echo":true,"latest":26}
+DBG render 48593 {"v":"Fix until","sent":26,"echo":true,"latest":26}
